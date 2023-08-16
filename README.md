@@ -9,7 +9,7 @@ pip install -r requirements.txt
 ## running using gunircorn
 
 ```
-unicorn --bind 0.0.0.0:9000 --timeout 120 --threads 1 server:app
+gunicorn --bind 0.0.0.0:9000 --timeout 120 --threads 1 server:app
 ```
 
 ## testing using curl
