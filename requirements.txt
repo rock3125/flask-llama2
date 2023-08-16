@@ -1,0 +1,8 @@
+transformers==4.30.2
+accelerate==0.20.3
+gunicorn
+gevent
+flask
+flask-cors
+flask-restplus
+
