@@ -26,7 +26,7 @@ curl -H "Content-Type: plain/text" -X POST --data "As is often the case with Spa
 
 NB. uses the '|' symbol at the end to separate the question from the data supplied.
 
-response: (processing_time in milliseconds)
+response: (processing_time in milliseconds, from a 12GB RTX 2080)
 ```json
 {"processing_time":289,"response":"The founder of SpaceX is Elon Reeve Musk."}
 ```
