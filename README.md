@@ -30,3 +30,29 @@ response: (processing_time in milliseconds, from a 12GB RTX 2080)
 ```json
 {"processing_time":289,"response":"The founder of SpaceX is Elon Reeve Musk."}
 ```
+
+## docker build
+```
+docker build -t llama2-server .
+```
+
+## arch / ubuntu gpu support for docker
+```
+yay -S libnvidia-container libnvidia-container-tools
+```
+
+or
+
+```
+sudo apt install -y nvidia-container-tools
+```
+
+## docker run
+```
+```
+
+## location of the model inside the container
+```
+/root/.cache/huggingface/hub/models--h2oai--h2ogpt-gm-oasst1-en-2048-open-llama-3b/snapshots/2c118b28c58a39e41bbc07c48594a4900ba3f083/pytorch_model.bin
+```
+

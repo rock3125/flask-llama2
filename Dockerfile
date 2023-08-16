@@ -18,4 +18,5 @@ RUN python3 /app/install.py
 COPY server.py /app/server.py
 
 # start the server
-CMD ["gunicorn --bind 0.0.0.0:9000 --timeout 120 --threads 1 server:app"]
+# CMD ["sleep", "5000"]
+CMD ["gunicorn", "--bind", "0.0.0.0:9000", "--timeout", "120", "--threads", "1", "server:app"]
