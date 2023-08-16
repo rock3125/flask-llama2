@@ -5,4 +5,4 @@ gevent
 flask
 flask-cors
 flask-restplus
-
+sentencepiece
