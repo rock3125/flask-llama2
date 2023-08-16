@@ -38,17 +38,18 @@ docker build -t llama2-server .
 
 ## arch / ubuntu gpu support for docker
 ```
-yay -S libnvidia-container libnvidia-container-tools
+yay -S libnvidia-container libnvidia-container-tools nvidia-container-runtime
 ```
-
 or
-
 ```
 sudo apt install -y nvidia-container-tools
 ```
+test `docker run -it --rm --gpus all --runtime nvidia nvidia/cuda:12.2.0-base-ubuntu20.04 nvidia-smi`
+
 
 ## docker run
 ```
+docker run -it --rm --gpus all --runtime nvidia -p 9000:9000 llama2-server:latest
 ```
 
 ## location of the model inside the container
